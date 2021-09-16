@@ -1,0 +1,400 @@
+/*GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{text-decoration: none;}
+ul li{color: coral;}
+.indice{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+}
+
+/*index*/
+
+body{
+    background-color: ivory;
+}
+
+header{
+    font-size: 15px; 
+    text-align: right;
+}
+
+
+h1{font-weight: bold; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: coral;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+
+article{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
+    margin-top: 35em;
+    margin-bottom: 45px;
+    line-height: 45px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+nav li{
+    display: flex; 
+    float: right;
+    text-align: right;
+    flex-direction: row; 
+    width: 12%; 
+    padding-right: 45px;
+}
+
+nav li:hover{
+padding: 20px;
+background-color: rgb(221, 240, 255);
+color: floralwhite;
+} 
+
+.img{
+    display: block;
+    margin-top: 100px;
+}
+
+.padre{
+    display: grid;
+    grid-template-areas:
+    "menu menu menu menu"
+    "articulo articulo articulo articulo"
+    "info info info info"
+    "footer footer footer footer"
+    "video video video video";
+    grid-template-rows: 100px 1fr 1fr 1fr;
+    grid-template-columns: 20% auto 15%;
+    justify-content: space-around;
+}
+
+.menu{
+    grid-area: menu;
+}
+.articulo{
+    grid-area: articulo;
+}
+.info{
+    grid-area: info;
+}
+.footer{
+    grid-area: footer;
+}
+.video{
+    grid-area: video;
+}
+
+footer{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.footer img{
+    border-radius: 50%;
+}
+/*carrito de compras*/
+
+
+/*contactanos*/
+.formu{
+    display: flex;
+    margin-left: 25px;
+    margin-right: 50%;
+}
+
+
+
+/*nuestra historia*/
+
+h1 .historia{color: coral; padding-left: 50px}
+h2 .historia{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; padding-left: 50px}
+p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 50px;
+    margin-left: 10px; 
+    margin-right: 10px;
+    line-height: 45px;
+}
+
+div li{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: black;
+    text-align: justify;
+    line-height: 45px;
+    list-style-type: none;
+        }
+
+.borde{
+    border: 1px dashed crimson;
+    background-color: rgb(207, 238, 252);
+}        
+
+/*nuestros productos*/
+
+.producto{
+    display: flex;
+    padding: 10px;
+    border: 1px dashed salmon;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.producto div{
+    background-color: rgb(204, 252, 228) ;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 20px;
+    border: 1px solid rgb(247, 94, 125);
+    padding-right: 100px;
+}
+
+img{
+    display: block;
+    margin-top: 30px;
+}
+
+.libros{
+    display: flex;
+    justify-content: space-around;
+}
+.libros div{
+    background-color: rgb(204, 252, 228) ;
+    border: 1px solid rgb(247, 94, 125);
+    padding: 0.5em;
+}
+
+@media (max-width: 600px){
+    .producto{
+        flex-direction: column;
+    }
+}
+
+
+/*nuestros servicios*/
+
+.aroma{text-align: right;}
+.reiki{text-align: right;}
+
+
+.servicios{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    
+}
+
+.servicios img{
+    display: block;
+    float: right;
+    width: 50%;
+    margin-top: 2px;
+    justify-content: right;
+}
+
+section p{
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+
+}
+
+/*Animación index*/
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif Arial, Helvetica, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.bg_animate{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(67, 67, 223),rgb(90, 136, 236));
+}
+.header_nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header_nav .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header_nav h1{
+    color: rgb(248, 244, 239);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+.header_nav nav a{
+    color: rgb(248, 244, 239);
+    text-decoration: none;
+    margin-right: 10px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.banner_title h2{
+    color: rgb(248, 244, 239);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner_title .registrate{
+    color: rgb(59, 116, 221);
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(222, 157, 250);
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner_title .inicia{
+    color: rgb(59, 116, 221);
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    background: rgb(222, 157, 250);
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner_img{
+    animation-name: movimiento;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.banner_img img{
+    width: 300px;
+    display: block;
+}
+.bubble{
+    border-radius: 50%;
+    background: rgb(231, 237, 247);
+    opacity: 3;
+
+    position: absolute;
+    bottom: -150;
+    
+    animation-name: burbuja;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.bubble:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 5s;
+    animation-delay: 8s;
+}
+.bubble:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 45%;
+    animation-duration: 5s;
+    animation-delay: 10s;
+}
+.bubble:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+.bubble:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+.bubble:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+.bubble:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+.bubble:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 41%;
+    animation-duration: 4s;
+    animation-delay: 6s;
+}
+.bubble:nth-child(8){
+    width: 100px;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+.bubble:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+.bubble:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+
+@keyframes burbuja{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translate(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
